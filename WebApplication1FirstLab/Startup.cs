@@ -39,8 +39,8 @@ namespace WebApplication1FirstLab
                     options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
                 })
                 .AddGoogle(options => {
-                    options.ClientId = "226132949775-u26qsoq6g1n38q9ijinfs9tv3tdesq6p.apps.googleusercontent.com";
-                    options.ClientSecret = "cHttyXEk_bB0wkKXbLOLBcN6";
+                    options.ClientId = "ID";
+                    options.ClientSecret = "Secret";
                 });
             services.AddAuthorization(opts =>
             {
