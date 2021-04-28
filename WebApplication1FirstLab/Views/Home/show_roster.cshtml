@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "SHOW ROSTER";
+    string[] tableHead = new string[] { "Player ID", "Jersey", "First name", "Surname", "Position", "Birthday", "Weight",
+        "Height", "Birth city", "Birth state"};
+}
+
+<div class="text-center">
+    <table class="table, table-bordered">
+        <thead>
+            <tr>
+                @{
+                    foreach (var headInfo in tableHead)
+                    {
+                        <th>
+                            @headInfo
+                        </th>
+                    }
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @{ 
+                if (Model != null)
+                {
+                    foreach (var Data in Model)
+                    { 
+                        <tr>
+                            <td>@Data.playerID</td>
+                            <td>@Data.jersey</td>
+                            <td>@Data.fname</td>
+                            <td>@Data.sname</td>
+                            <td>@Data.position</td>
+                            <td>@Data.birthday</td>
+                            <td>@Data.weight</td>
+                            <td>@Data.height</td>
+                            <td>@Data.birthcity</td>
+                            <td>@Data.birthstate</td>
+                        </tr>
+                    }
+                }
+            }
+        </tbody>
+    </table>
+</div>

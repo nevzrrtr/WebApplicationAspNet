@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "SEARCH";
+}
+
+<div class="text-center">
+    <form asp-action="DeleteRost" method="post">
+        <p>
+            <input type="text" class="form-control" name="position" />
+        </p>
+    <p>
+        <div class="form-group">
+            <label class="control-label">From the date:</label>
+            <input type="date" class="form-control" name="startDate" />
+            <br />
+            <label class="control-label">Until the date:</label>
+            <input type="date" class="form-control" name="endDate" />
+        </div>
+    </p>
+    <p>
+        <button>Submit</button>
+    </p>
+    </form>
+</div>
